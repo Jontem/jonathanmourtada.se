@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jonathan Mourtada Coaching – personlig löpcoaching</title>
+  <meta name="description" content="Personlig löpcoaching med diplomerad löpcoach. Träningsschema vecka för vecka och uppföljning av dina pass. 990 kr/mån, ingen bindningstid.">
+  <meta property="og:title" content="Jonathan Mourtada Coaching">
+  <meta property="og:description" content="Personlig löpcoaching med träningsschema vecka för vecka. 990 kr/mån, ingen bindningstid.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jonathanmourtada.se/">
+  <meta property="og:image" content="https://jonathanmourtada.se/images/hero.jpg">
+  <meta property="og:locale" content="sv_SE">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip" href="#om-mig">Hoppa till innehållet</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="#top">Jonathan Mourtada <span>Coaching</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Meny</button>
+    <nav id="nav" class="nav">
+      <a href="#om-mig">Om mig</a>
+      <a href="#resultat">Resultat</a>
+      <a href="#coaching">Coaching</a>
+      <a class="btn btn-small" href="#ansok">Ansök</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO. Drönarklipp: video/hero.mp4 (dator), video/hero-mobil.mp4 (mobil), video/hero-poster.jpg (stillbild) -->
+  <section class="hero">
+    <figure class="photo photo-hero">
+      <video class="loop-video" autoplay muted loop playsinline poster="video/hero-poster.jpg" aria-label="Jonathan springer på en landsväg mellan åkrar, filmat med drönare">
+        <source src="video/hero-mobil.mp4" type="video/mp4" media="(max-width: 59.99em)">
+        <source src="video/hero.mp4" type="video/mp4">
+      </video>
+    </figure>
+    <div class="wrap hero-content">
+      <p class="hero-kicker">Diplomerad löpcoach</p>
+      <h1 class="hero-title">Löpcoaching med en plan som passar ditt liv.</h1>
+      <p class="hero-lede">Jag heter Jonathan och tränar löpare på alla nivåer. Du får ett schema vecka för vecka, uppföljning av dina pass och någon att stämma av med när det behövs.</p>
+      <div class="hero-actions">
+        <a class="btn btn-light" href="#ansok">Ansök om coaching</a>
+        <a class="link-light" href="#coaching">Se vad som ingår</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- OM MIG -->
+  <section id="om-mig" class="section">
+    <div class="wrap about">
+      <figure class="photo photo-portrait">
+        <img src="images/portratt.jpg" alt="Jonathan i IKHP Huskvarnas linne under Göteborgsvarvet" onerror="this.remove()">
+        <span class="photo-monogram" aria-hidden="true">JM</span>
+      </figure>
+      <div class="about-text prose">
+        <h2>Om mig</h2>
+        <p>Jag var aktiv som yngre men levde sedan ett stillasittande liv. Jag började springa först när jag var 33, för att jag behövde röra på mig och ändra min livsstil. Det började med att jag sprang varje dag och övergick sedan i en vilja att prestera.</p>
+        <p>Jag gillar att lära mig allt om löpning och är inte låst vid en viss träningsfilosofi. Jag är diplomerad löpcoach genom Tränarakademin, steg 1 och 2.</p>
+        <ul class="social">
+          <li><a href="https://www.instagram.com/jontem/" rel="me noopener" target="_blank">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor"/></svg>
+            Instagram</a></li>
+          <li><a href="https://www.tiktok.com/@jontemrunning" rel="me noopener" target="_blank">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 3c.4 2.6 2 4.3 4.5 4.6v3.1c-1.6 0-3.1-.5-4.4-1.4v6.2c0 3.2-2.6 5.5-5.6 5.5S3.5 18.7 3.5 15.6c0-3.2 2.8-5.6 6.1-5.2v3.2c-1.4-.4-2.9.6-2.9 2 0 1.2 1 2.2 2.2 2.2 1.3 0 2.3-.9 2.3-2.4V3h3.3z" fill="currentColor"/></svg>
+            TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTAT. Siffrorna kommer från js/races.js -->
+  <section id="resultat" class="section section-mist">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Mina resultat</h2>
+      </div>
+
+      <dl class="pbs" id="pbs"></dl>
+
+      <figure class="chart-figure">
+        <div class="chart-legend" aria-hidden="true">
+          <span class="key key-10">Milen</span>
+          <span class="key key-21">Halvmaraton</span>
+        </div>
+        <div id="chart" class="chart" role="img" aria-label="Graf över mitt snabbaste tempo per år, 2022 till 2026. Milen gick från 39:25 till 33:37 och halvmaraton från 1:29:25 till 1:15:04."></div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- BILD OCH VIDEO. Byt images/lopp-1.jpg eller video/lopband.mp4 (+ lopband.jpg som stillbild) -->
+  <section class="gallery" aria-label="Bild och video från träning och lopp">
+    <div class="wrap gallery-grid">
+      <figure class="gallery-figure">
+        <div class="photo photo-wide">
+          <img src="images/lopp-1.jpg" alt="Jonathan springer i mål på Jönköpings halvmaraton" onerror="this.remove()">
+        </div>
+        <figcaption>Målgång, Jönköpings halvmaraton</figcaption>
+      </figure>
+      <figure class="gallery-figure gallery-figure-clip">
+        <div class="photo photo-clip">
+          <video class="loop-video" src="video/lopband.mp4" poster="video/lopband.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Jonathan springer på löpband, filmat från sidan"></video>
+        </div>
+        <figcaption>Pass på löpbandet</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- FILOSOFI -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Grunderna i min coaching</h2>
+      </div>
+      <div class="principles">
+        <div class="principle">
+          <h3>Först en stark bas, sedan specifikt.</h3>
+          <p>Vi bygger uthållighet och styrka och lägger sedan till farten som ditt lopp kräver.</p>
+        </div>
+        <div class="principle">
+          <h3>Ät tillräckligt.</h3>
+          <p>Kroppen behöver energi för att orka träna och återhämta sig.</p>
+        </div>
+        <div class="principle">
+          <h3>Planen anpassas efter dig.</h3>
+          <p>Jobb, familj, sömn och gamla skador styr upplägget.</p>
+        </div>
+        <div class="principle">
+          <h3>Träna jämnt över tid.</h3>
+          <p>Det är månader av träning i följd som bygger formen, inte enstaka hårda pass.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COACHING OCH PRIS -->
+  <section id="coaching" class="section section-mist">
+    <div class="wrap offer">
+      <div class="offer-text">
+        <h2>Personlig löpcoaching</h2>
+        <p class="offer-lede">För dig som vill utvecklas som löpare, oavsett var du börjar.</p>
+        <ul class="checklist">
+          <li>Skräddarsytt träningsschema vecka för vecka.</li>
+          <li>Jag följer upp dina pass och justerar planen efter hur det gick.</li>
+          <li>Träning efter dina förutsättningar och din livssituation.</li>
+          <li>Kontakt när du har frågor.</li>
+          <li>Loppupplägg inför dina tävlingar.</li>
+        </ul>
+      </div>
+      <aside class="price-card" aria-label="Pris">
+        <p class="price"><span class="price-amount">990</span> <span class="price-unit">kr/mån</span></p>
+        <p class="price-vat">inklusive moms</p>
+        <ul class="price-terms">
+          <li>Ingen bindningstid. Säg upp före månadsskiftet.</li>
+          <li>Faktureras månadsvis i förskott.</li>
+          <li>Kan användas för friskvårdsbidrag.</li>
+        </ul>
+        <a class="btn btn-light btn-block" href="#ansok">Ansök om coaching</a>
+      </aside>
+    </div>
+  </section>
+
+  <!-- SÅ GÅR DET TILL -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Så går det till</h2>
+      </div>
+      <ol class="steps">
+        <li>
+          <h3>Du ansöker</h3>
+          <p>Berätta kort om dig själv och vad du vill uppnå.</p>
+        </li>
+        <li>
+          <h3>Vi pratar</h3>
+          <p>Jag läser varje ansökan och hör av mig inom ett par dagar. Vi tar ett kort samtal om mål och vardag. Det kostar ingenting.</p>
+        </li>
+        <li>
+          <h3>Du fyller i ett frågeformulär</h3>
+          <p>Om din träning, dina lopp och eventuella skador. Svaren blir underlaget för din plan.</p>
+        </li>
+        <li>
+          <h3>Du får ditt första schema</h3>
+          <p>Första veckan är klar och vi är igång.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ANSÖKAN. Byt FORMSPREE_ID mot ditt formulär-id från formspree.io -->
+  <section id="ansok" class="section section-ink">
+    <div class="wrap apply">
+      <div class="apply-intro">
+        <h2>Ansök om coaching</h2>
+        <p>Jag har ett begränsat antal platser. Fyll i formuläret så hör jag av mig inom ett par dagar. Ansökan är inte bindande.</p>
+        <p class="apply-small">Uppgifterna används bara för att svara på din ansökan.</p>
+      </div>
+      <form class="form" id="apply-form" action="https://formspree.io/f/FORMSPREE_ID" method="POST">
+        <div class="field">
+          <label for="f-name">Namn</label>
+          <input id="f-name" name="namn" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="f-email">E-post</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field field-wide">
+          <label for="f-about">Berätta om dig själv</label>
+          <textarea id="f-about" name="om_mig" rows="5" placeholder="Vem du är, hur du tränar i dag och hur löpningen passar in i din vardag." required></textarea>
+        </div>
+        <div class="field field-wide">
+          <label for="f-goal">Vad är ditt mål, och varför är det viktigt för dig?</label>
+          <textarea id="f-goal" name="mal" rows="4" placeholder="T.ex. Göteborgsvarvet under 1:45." required></textarea>
+        </div>
+        <div class="field field-wide">
+          <label for="f-other">Något mer jag borde veta?</label>
+          <textarea id="f-other" name="ovrigt" rows="3"></textarea>
+        </div>
+        <div class="hp" aria-hidden="true">
+          <label for="f-gotcha">Lämna tomt</label>
+          <input id="f-gotcha" type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+        </div>
+        <input type="hidden" name="_subject" value="Ny coachingansökan">
+        <div class="field-wide form-actions">
+          <button class="btn btn-light" type="submit">Skicka ansökan</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <p class="footer-name">Jonathan Mourtada Coaching</p>
+      <p>Jonathan Mourtada AB<br>Org.nr 559397-2267<br>Momsreg.nr SE559397226701<br>Bankeryd, Jönköping</p>
+    </div>
+    <ul class="footer-links">
+      <li><span class="email" data-user="kontakt" data-domain="jonathanmourtada.se">kontakt (at) jonathanmourtada.se</span></li>
+      <li><a href="https://www.instagram.com/jontem/" rel="me noopener" target="_blank">Instagram</a></li>
+      <li><a href="https://www.tiktok.com/@jontemrunning" rel="me noopener" target="_blank">TikTok</a></li>
+      <li><a href="#ansok">Ansök om coaching</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="js/races.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
