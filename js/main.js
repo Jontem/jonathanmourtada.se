@@ -228,11 +228,6 @@
       e.preventDefault();
       status.className = "form-status";
 
-      if (form.action.indexOf("FORMSPREE_ID") !== -1) {
-        status.innerHTML = 'Formuläret är inte aktiverat än. Skicka ett meddelande på <a href="https://www.instagram.com/jontem/" target="_blank" rel="noopener">Instagram</a> så länge.';
-        return;
-      }
-
       var button = form.querySelector("button[type=submit]");
       button.disabled = true;
       status.textContent = "Skickar ansökan …";
